@@ -50,7 +50,7 @@ $dbconn = mysqli_select_db($con, $database)
 	}
 
 	
-	header("refresh:60;url=https://project174.herokuapp.com/insert/");
+	header("refresh:2;url=index.php");
 ?>
 <br>
 <br>
