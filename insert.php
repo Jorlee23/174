@@ -27,17 +27,6 @@ $dbconn = mysqli_select_db($con, $database)
 	
 	$sql = "INSERT INTO Game (g_name,g_price,g_genre) VALUES ('$g_name', '$g_price', '$g_genre')";
 
-	$sql2 = "select * from Game";
-	$result = $con->query($sql2);
-	
-	if($result->num_rows > 0){
-		while($row = $result->fetch_assoc() ) {
-			echo $row["g_name"] . "  " .$row["g_price"]. "<br><br>";
-		}
-	}
-	else {
-		echo "0 records";
-	}
 
 	if(!mysqli_query($con,$sql))
 	{
@@ -54,7 +43,6 @@ $dbconn = mysqli_select_db($con, $database)
 ?>
 <br>
 <br>
-<button onclick="goBack()">Go Back</button>
 
 <form action="index.php">
     <input type="submit" value="Go Back" />
