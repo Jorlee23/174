@@ -15,7 +15,7 @@ Game Genre: <input type="text" name="g_genre" /><br><br>
 
 <input type="submit" value="Insert">
 
-<?php
+/*  <?php
 
 $username="dbmasteruser";
 $password="2!Ib+WXS7k6+d~`t_YA8CZsy,k=w>F!G";
@@ -42,9 +42,8 @@ $dbconn = mysqli_select_db($con, $database)
 		echo "0 records";
 	}
 
-?>
+?>  */
 
-</select>
 
 </form>
 

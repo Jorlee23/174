@@ -54,7 +54,7 @@ $dbconn = mysqli_select_db($con, $database)
 ?>
 <br>
 <br>
-<form action="https://project174.herokuapp.com/index/">
+<form action="index.php">
     <input type="submit" value="Go Back" />
 </form>
 
