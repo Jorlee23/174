@@ -50,17 +50,13 @@ $dbconn = mysqli_select_db($con, $database)
 	}
 
 	
-	header("url=index.php");
+	header("refresh:60;url=https://project174.herokuapp.com/insert/");
 ?>
 <br>
 <br>
 <button onclick="goBack()">Go Back</button>
 
-<script>
-function goBack() {
-  window.history.back();
-}
-</script>
+
 </body>
 
 </html>
