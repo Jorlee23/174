@@ -2,9 +2,9 @@
 
 <body>
 
- 
 
- 
+
+
 
 <?php
 
@@ -15,8 +15,6 @@ $database="bitnami_wordpress";
 
 $con = mysqli_connect($hostname, $username, $password)
   or die("Connection Failed");
-  
-
 
 $dbconn = mysqli_select_db($con, $database)
   or die("DB not selected");
@@ -24,41 +22,22 @@ $dbconn = mysqli_select_db($con, $database)
 	$g_name = $_POST['g_name'];
 	$g_price = $_POST ['g_price'];
 	$g_genre = $_POST ['g_genre'];
-	
-	$sql = "INSERT INTO Game (g_name,g_price,g_genre) VALUES ('$g_name', '$g_price', '$g_genre')";
 
-	$sql2 = "select * from Game";
-	$result = $con->query($sql2);
-	
-	if($result->num_rows > 0){
-		while($row = $result->fetch_assoc() ) {
-			echo $row["g_name"] . "  " .$row["g_price"]. "<br><br>";
-		}
-	}
-	else {
-		echo "0 records";
-	}
+	$sql = "INSERT INTO Game (g_name,g_price,g_genre) VALUES ('$g_name', '$g_price', '$g_genre')";
 
 	if(!mysqli_query($con,$sql))
 	{
 		echo'Not inserted.';
 	}
-	
+
 	else
-	{	
-		echo'Inserted. <br>';
+	{
+		echo'Inserted.';
 	}
 
-	
-	header("url=index.php");
+	header("refresh:2; url=index.php");
 ?>
-<br>
-<br>
-<button onclick="goBack()">Go Back</button>
 
-<form action="index.php">
-    <input type="submit" value="Go Back" />
-</form>
 </body>
 
-</html>
+</html> 
