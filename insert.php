@@ -47,9 +47,7 @@ $dbconn = mysqli_select_db($con, $database)
 ?>
 <br>
 <br>
-<form action="index.php">
-    <input type="submit" value="Go Back" />
-</form>
+
 
 
 </body>
