@@ -32,7 +32,7 @@ $dbconn = mysqli_select_db($con, $database)
 
 	else
 	{
-		echo'Inserted.';
+		echo'Inserted. You will now be redirected back to the index.';
 	}
 
 	header("refresh:2; url=index.php");
