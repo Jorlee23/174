@@ -2,7 +2,7 @@
 
 <body>
 <center>
-<h1>Add a game to Steam.</h1>
+<h1>Add a game.</h1>
 <br>
 
 <form action="insert.php" method="post">
