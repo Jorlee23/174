@@ -8,11 +8,11 @@
 <form action="insert.php" method="post">
 
 
-Game Name: <input type="text" placeholder="Game Name" name="g_name" /><br><br>
+Game Name: <input type="text" name="g_name" /><br><br>
 
-Game Price: <input type="text" placeholder="0.00" name="g_price" /><br><br>
+Game Price: <input type="text" name="g_price" /><br><br>
 
-Game Genre: <input type="text" placeholder="Game Genre" name="g_genre" /><br><br>
+Game Genre: <input type="text" name="g_genre" /><br><br>
 
 <input type="submit" value="Insert">
 
